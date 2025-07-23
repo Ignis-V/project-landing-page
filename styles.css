@@ -31,3 +31,89 @@ a {
 ul {
     display: flex;
 }
+
+
+/* Main section styles */
+
+main {
+    display: flex;
+    flex-direction: column; /* Ensure children are stacked in a column */
+    gap: 20px; /* Optional: Add spacing between the sections */
+}
+
+.main-1, .main-2, .main-3, .main-4 {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #1f2937;
+    color: #f9faf8;
+}
+
+.main-2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.main-3 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.main-4 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+}
+
+
+
+.m1-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.m1-right {
+    display: flex;
+    align-items: center;
+}
+
+.m1-t1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.m1-t2 {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button {
+    background-color: #3b82f6;
+    color: #f9faf8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
