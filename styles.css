@@ -1,3 +1,5 @@
+
+
 header {
     background-color: #1f2937;
     color: #f9faf8;
@@ -44,14 +46,16 @@ main {
 .main-1, .main-2, .main-3, .main-4 {
     display: flex;
     flex-direction: column; /* Stack children vertically */
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
 }
 
 .main-1 {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row; /* Stack children horizontally */
+    justify-content: space-evenly;
+    align-items: center;
     padding: 20px;
     background-color: #1f2937;
     color: #f9faf8;
@@ -59,13 +63,35 @@ main {
 
 .main-2 {
     display: flex;
+    flex-direction: column; /* Keep children in a column */
     justify-content: space-around;
     padding: 20px;
+    background-color: white;
+    color:#1f2937;
 }
+
+.m2-t1 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+.m2-box {
+    display: flex;
+    flex-direction: row; /* Stack image and text horizontally */
+    align-items: center; /* Center the content */
+    gap: 8px; /* Space between image and text */
+}
+
+.m2-box p {
+    flex-wrap: wrap;
+}
+
 
 .main-3 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     background-color: #e5e7eb;
     color: #1f2937;
@@ -77,25 +103,19 @@ main {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background-color: blue;
+    background-color: #3b82f6;
     color: white;
 }
 
 
 
 .m1-left {
-    flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; /* text and buttons align to the left */
     flex-direction: column;
-    gap: 16px;
+    gap: 5px;
 }
 
-.m1-right {
-    display: flex;
-    align-items: center;
-}
 
 .m1-t1 {
     font-size: 48px;
