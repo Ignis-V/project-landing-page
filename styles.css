@@ -59,6 +59,38 @@ main {
     padding: 20px;
     background-color: #1f2937;
     color: #f9faf8;
+    width: 100%; /* changes size of this section: Ensure it takes full width */
+    height: 300px; /* changes size of this section: Set a fixed height */
+}
+
+.m1-left {
+    display: flex;
+    align-items: flex-start; /* text and buttons align to the left */
+    flex-direction: column;
+    gap: 5px;
+    width: 500px; /* text will go to the next line: Set a fixed width for the left section */
+}
+
+
+.m1-t1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.m1-t2 {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button {
+    background-color: #3b82f6;
+    color: #f9faf8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
 }
 
 .main-2 {
@@ -68,6 +100,8 @@ main {
     padding: 20px;
     background-color: white;
     color:#1f2937;
+    width: 100%; /* changes size of this section: Ensure it takes full width */
+    height: 300px; /* changes size of this section: Set a fixed height */
 }
 
 .m2-t1 {
@@ -97,6 +131,8 @@ main {
     color: #1f2937;
     font-size: 36px;
     font-style: italic;
+    width: 100%; /* changes size of this section: Ensure it takes full width */
+    height: 300px; /* changes size of this section: Set a fixed height */
 }
 
 .main-4 {
@@ -105,35 +141,8 @@ main {
     padding: 20px;
     background-color: #3b82f6;
     color: white;
+    width: 100%; /* changes size of this section: Ensure it takes full width */
+    height: 300px; /* changes size of this section: Set a fixed height */
 }
 
 
-
-.m1-left {
-    display: flex;
-    align-items: flex-start; /* text and buttons align to the left */
-    flex-direction: column;
-    gap: 5px;
-}
-
-
-.m1-t1 {
-    font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
-}
-
-.m1-t2 {
-    font-size: 18px;
-    color: #e5e7eb;
-}
-
-button {
-    background-color: #3b82f6;
-    color: #f9faf8;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 700;
-}
