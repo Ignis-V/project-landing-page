@@ -1,19 +1,24 @@
-
 * { /* this applies to all elements */
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background-color: #1f2937;
-    color: #f9faf8;
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box; /* Ensure padding and borders are included in element width */
 }
 
 .header {
+    background-color: #1f2937;
+    color: #f9faf8;
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
 }
+
 .logo {
     font-size: 24px;
     font-weight: 900;
